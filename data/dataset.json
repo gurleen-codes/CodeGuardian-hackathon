@@ -1,0 +1,32 @@
+[
+  {
+    "question": "What is the difference between supervised and unsupervised learning?"
+  },
+  {
+    "question": "Explain the concept of overfitting in machine learning."
+  },
+  {
+    "question": "How does a decision tree algorithm work?"
+  },
+  {
+    "question": "Describe the architecture of a convolutional neural network."
+  },
+  {
+    "question": "What is reinforcement learning and how is it different from supervised learning?"
+  },
+  {
+    "question": "Explain the purpose of regularization and give examples of common regularization techniques."
+  },
+  {
+    "question": "How do embedding layers work in natural language processing models?"
+  },
+  {
+    "question": "What are transformers and why have they become so popular in NLP?"
+  },
+  {
+    "question": "Describe the bias–variance tradeoff in model evaluation."
+  },
+  {
+    "question": "How would you handle missing data in a dataset before training a model?"
+  }
+]
