@@ -21,7 +21,9 @@ CodeGuardian consists of several key components:
 
 ## 🛠️ Technical Stack
 
-- **Backend**: Node.js with Express
+- **Backend**: 
+  - Python 3.8+ with FastAPI
+  - Node.js with Express
 - **AI Services**: Azure OpenAI
 - **Cloud Functions**: Azure Functions
 - **Database**: Azure Cosmos DB
@@ -33,21 +35,25 @@ CodeGuardian consists of several key components:
 
 ```
 codeguardian/
-├── github-app/            # GitHub App integration code
-├── azure-functions/       # Azure Functions for code analysis
-│   └── analyze-code/      # Code analysis function
+├── agents/               # AI agent implementations
+├── config/              # Configuration files
+├── utils/               # Utility functions
+├── data/                # Data storage and processing
+├── github-app/          # GitHub App integration code
+├── azure-functions/     # Azure Functions for code analysis
 ├── services/
 │   ├── test-recommender/  # Test recommendation system
 │   └── repo-scanner/      # GitHub repository scanner
-├── frontend/              # React dashboard UI
-├── docs/                  # Documentation
-└── scripts/               # Setup and deployment scripts
+├── frontend/            # React dashboard UI
+├── docs/                # Documentation
+└── scripts/             # Setup and deployment scripts
 ```
 
 ## 🚦 Getting Started
 
 ### Prerequisites
 
+- Python 3.8 or higher
 - Node.js 16+
 - Azure account with OpenAI service enabled
 - GitHub account with permissions to create GitHub Apps
@@ -61,12 +67,22 @@ codeguardian/
    cd codeguardian
    ```
 
-2. **Install dependencies**
+2. **Set up Python environment**
+   ```bash
+   # Create and activate virtual environment
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   
+   # Install Python dependencies
+   pip install -r requirements.txt
+   ```
+
+3. **Install Node.js dependencies**
    ```bash
    npm install
    ```
 
-3. **Create a GitHub App**
+4. **Create a GitHub App**
    - Go to your GitHub account settings → Developer settings → GitHub Apps
    - Create a new GitHub App with the following permissions:
      - Repository contents: Read
@@ -76,7 +92,7 @@ codeguardian/
    - Generate and download a private key
    - Note the App ID, Client ID, and Client Secret
 
-4. **Set up environment variables**
+5. **Set up environment variables**
    Create a `.env` file with the following variables:
    ```
    # GitHub App Configuration
@@ -94,14 +110,33 @@ codeguardian/
    # Azure Cosmos DB
    COSMOS_DB_ENDPOINT=your_cosmos_endpoint
    COSMOS_DB_KEY=your_cosmos_key
+   COSMOS_DB_DATABASE=codeguardian
+   COSMOS_DB_CONTAINER=analysis-results
+   
+   # Server Configuration
+   PORT=3000
+   NODE_ENV=development
    ```
 
-5. **Start the development server**
+6. **Start the development servers**
    ```bash
+   # Start Python backend
+   uvicorn main:app --reload
+   
+   # In a separate terminal, start Node.js frontend
    npm run dev
    ```
 
-6. **Deploy Azure Functions**
+7. **Run tests**
+   ```bash
+   # Python tests
+   pytest
+   
+   # Node.js tests
+   npm test
+   ```
+
+8. **Deploy Azure Functions**
    ```bash
    cd azure-functions
    npm run deploy
@@ -126,6 +161,24 @@ The CodeGuardian dashboard provides:
 - History of analyses and detected issues
 - Configuration options for analysis sensitivity
 - Project-specific settings and preferences
+
+## 🧪 Testing
+
+The project includes comprehensive testing:
+
+- Python unit tests using pytest
+- Node.js tests using Jest
+- Integration tests for API endpoints
+- End-to-end tests for critical workflows
+
+Run tests using:
+```bash
+# Python tests
+pytest
+
+# Node.js tests
+npm test
+```
 
 ## 🤝 Contributing
 
