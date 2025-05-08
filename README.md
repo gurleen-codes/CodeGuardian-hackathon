@@ -126,15 +126,12 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 Gurleen Bajwa
 Email: gurleen5bajwa@gmail.com
-LinkedIn:  Gurleen Bajwa
 
 Trisha Gupta
 Email: trishagupta1804@gmail.com
-LinkedIn: Trisha Gupta
 
 Ilyes Sais
 Email: ilyessais2000@gmail.com
-LinkedIn: Ilyes Sais
 
 
 ## 📜 License
