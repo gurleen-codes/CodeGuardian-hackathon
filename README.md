@@ -121,6 +121,23 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
+
+## Project Team:
+
+Gurleen Bajwa
+
+Email: gurleen5bajwa@gmail.com
+LinkedIn: Gurleen Bajwa
+Trisha Gupta
+
+Email: trishagupta1804@gmail.com
+LinkedIn: Trisha Gupta
+Ilyes Sais
+
+Email: ilyessais2000@gmail.com
+LinkedIn: Ilyes Sais
+
+
 ## 📜 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
