@@ -125,15 +125,14 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## Project Team:
 
 Gurleen Bajwa
-
 Email: gurleen5bajwa@gmail.com
-LinkedIn: Gurleen Bajwa
-Trisha Gupta
+LinkedIn:  Gurleen Bajwa
 
+Trisha Gupta
 Email: trishagupta1804@gmail.com
 LinkedIn: Trisha Gupta
-Ilyes Sais
 
+Ilyes Sais
 Email: ilyessais2000@gmail.com
 LinkedIn: Ilyes Sais
 
